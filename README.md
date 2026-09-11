@@ -64,7 +64,6 @@ flowchart TD
 TeamAgents/
 ├── AGENTS.md                              # Root Rules & Anti-Hallucination Governance
 ├── .agents/
-│   ├── AGENTS.md                          # Workspace rules mirror
 │   └── skills/                            # ทักษะตามมาตรฐาน Antigravity Skill Specification
 │       ├── anti-hallucination-guardian/   # [NEW] ระบบตรวจสอบและป้องกันอาการหลอน
 │       │   └── SKILL.md
