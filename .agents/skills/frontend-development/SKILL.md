@@ -6,7 +6,14 @@ description: >-
 
 # Frontend Development Skill
 
-Provides UI/UX component development guidelines, state management patterns, and client-side testing workflows for Senior Frontend Engineers.
+Provides UI/UX component development guidelines, state management patterns, and token-optimized implementation workflows for Senior Frontend Engineers.
+
+---
+
+## ⚡ Token Optimization Note (Implementation-Only Mode)
+By default, frontend engineers operate in **Implementation-Only Mode**:
+- Do not write, execute, or read component unit test files unless explicitly requested by the user (`"write test"`, `"test this"`, etc.).
+- Rely on TypeScript static type checking (`tsc --noEmit`) and component contract validation for deterministic baseline verification.
 
 ---
 
@@ -40,6 +47,7 @@ Provides UI/UX component development guidelines, state management patterns, and 
 
 Before completing frontend tasks, verify:
 - [ ] Responsive design functions across mobile, tablet, and desktop viewports.
-- [ ] Loading, Empty, and Error states are implemented and tested.
-- [ ] Component unit tests pass (`vitest`, `jest`, or React Testing Library).
+- [ ] Loading, Empty, and Error states are implemented.
+- [ ] Static type checks pass with 0 errors (`tsc --noEmit`).
+- [ ] Strict Zero-Test Policy observed: component unit tests run ONLY if explicitly requested by user prompt.
 - [ ] No layout shift (CLS) or console warning errors during render.

@@ -6,7 +6,14 @@ description: >-
 
 # Backend Development Skill
 
-Provides engineering standards, code structure guidelines, and implementation workflows for Senior Backend Developers.
+Provides engineering standards, code structure guidelines, and token-optimized implementation workflows for Senior Backend Developers.
+
+---
+
+## ⚡ Token Optimization Note (Implementation-Only Mode)
+By default, backend engineers operate in **Implementation-Only Mode**:
+- Do not write, execute, or read unit test files unless explicitly requested by the user (`"write test"`, `"unit test"`, etc.).
+- Rely on schema validation models (Pydantic, Zod) and static type checking (`mypy --quick`, `tsc --noEmit`) for deterministic baseline correctness.
 
 ---
 
@@ -48,6 +55,6 @@ Provides engineering standards, code structure guidelines, and implementation wo
 
 Before completing backend implementation tasks, verify:
 - [ ] All request payloads are strictly validated against schema models.
-- [ ] Unit tests cover happy path and error cases.
-- [ ] Linter and type-checker pass with 0 errors.
+- [ ] Linter and type-checker pass with 0 errors (`mypy --quick`, `ruff check`, or `tsc --noEmit`).
+- [ ] Strict Zero-Test Policy observed: unit tests written or run ONLY if explicitly requested by user prompt.
 - [ ] No hardcoded credentials, secret keys, or absolute local paths.
